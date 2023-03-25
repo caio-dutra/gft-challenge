@@ -9,6 +9,7 @@ public class Model extends Carro {
 	}
 
 	public void setTipoCombustivel(String tipoCombustivel) {
+		
 		this.tipoCombustivel = tipoCombustivel;
 	}
 
@@ -17,9 +18,18 @@ public class Model extends Carro {
 	}
 	
 	public void imprimirDados() {
-		System.out.println("-----------------------");
+		System.out.println("-----------------------------------------");
 		System.out.println("Modelo: " + modelo);
 		System.out.println("Marca: " + marca);
 		System.out.println("Tipo de combustível: " + tipoCombustivel);
 	}
+	
+
+	@Override
+	public String toString() {
+		return "[Modelo = " + modelo + ", " +
+			   "Marca = " + marca + ", " + 
+			   "Tipo de combustível = " + tipoCombustivel + "]";
+	}
+	
 }

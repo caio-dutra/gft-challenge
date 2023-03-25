@@ -14,11 +14,11 @@ public class Carro {
 		return marca;
 	}
 
-	public void setModelo(String modelo) {
-		this.modelo = modelo;
+	public String setModelo(String modelo) {
+		return this.modelo = modelo;
 	}
 
-	public void setMarca(String marca) {
-		this.marca = marca;
+	public String setMarca(String marca) {
+		return this.marca = marca;
 	}
 }
